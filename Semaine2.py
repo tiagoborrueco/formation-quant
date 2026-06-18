@@ -42,3 +42,20 @@ for r in rendement:
         print(f"Le rendement est positif: {r}")
     else:
         print(f"Le rendement est nul: {r}")
+
+
+# ========================================
+# =============Fonctions==================
+# ========================================
+
+def signe_rendement(rendement):
+    if rendement < 0:
+        return "négatif"
+    elif rendement > 0:
+        return "positif"
+    else:
+        return "nul"
+    
+for r in rendement:
+    print(f"Le rendement est {signe_rendement(r)} : {r}")
+    
